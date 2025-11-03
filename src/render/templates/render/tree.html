@@ -1,0 +1,71 @@
+{% load tree_extras %}
+{% if node|items %}
+  {# dict-like node #}
+  {% if key_name %}
+  <details>
+    <summary>
+      <span class="caret">
+        <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 2 L7 5 L3 8 Z" fill="currentColor" />
+        </svg>
+      </span>
+      <span class="key">{{ key_name }}</span>
+    </summary>
+    <div class="node">
+  {% endif %}
+
+  {% for k, v in node|items %}
+    {% include "render/tree.html" with node=v key_name=k %}
+  {% endfor %}
+
+  {% if key_name %}
+    </div>
+  </details>
+  {% endif %}
+
+{% elif node|is_list %}
+  {# list-like node #}
+  {% if key_name %}
+  <details>
+    <summary>
+      <span class="caret">
+        <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 2 L7 5 L3 8 Z" fill="currentColor" />
+        </svg>
+      </span>
+      <span class="key">{{ key_name }}</span>
+    </summary>
+    <div class="node">
+  {% endif %}
+
+  {% for v in node %}
+    {% include "render/tree.html" with node=v key_name=forloop.counter0 %}
+  {% endfor %}
+
+  {% if key_name %}
+    </div>
+  </details>
+  {% endif %}
+
+{% else %}
+  {# primitive value #}
+  <div class="kv">
+    {% if key_name and key_name != "description" and key_name != "link" %}
+      <span class="key">{{ key_name }}</span>:
+    {% endif %}
+
+    {% if node|stringformat:"s"|slice:":8" == "https://" or node|stringformat:"s"|slice:":7" == "http://" %}
+      <span class="string">
+        <a class="jsonlink" href="{{ node }}" target="_blank">{{ node }}</a>
+      </span>
+  {% elif node|is_bool %}
+    <span class="boolean">{{ node|yesno:"true,false" }}</span>
+  {% elif node|is_number %}
+    <span class="number">{{ node }}</span>
+  {% elif node|is_none %}
+    <span class="null">null</span>
+  {% else %}
+    <span class="string">{{ node }}</span>
+  {% endif %}
+  </div>
+{% endif %}

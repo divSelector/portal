@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Directory Tree</title>
+    <style>
+      :root {
+        --bg: #0f1417;
+        --panel: #15191b;
+        --muted: #6b7177;
+        --key: #9cdcfe;
+        --string: #ce9178;
+        --number: #b5cea8;
+        --boolean: #4ec9b0; /* slightly green / cyan like FF */
+        --null: #808080;
+        --bracket: #d4d4d4;
+        --link: #8ab4ff;
+        --line: rgba(255, 255, 255, 0.04);
+        --font: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+          "Segoe UI Mono", monospace;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: var(--bg);
+        color: var(--bracket);
+        font-family: var(--font);
+        font-size: 13px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 18px auto;
+        padding: 12px;
+        background: var(--panel);
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+      }
+
+      /* top toolbar like Firefox viewer */
+      .toolbar {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        margin-bottom: 8px;
+      }
+      .toolbar .btn {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        color: var(--muted);
+        padding: 6px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .toolbar .btn:hover {
+        color: var(--bracket);
+      }
+
+      pre {
+        margin: 0;
+        white-space: pre;
+        overflow: auto;
+        padding: 8px 12px;
+      }
+
+      /* tree area */
+      .json-root {
+        padding: 10px 6px;
+      }
+      details {
+        margin: 0;
+        padding: 0;
+      }
+      summary {
+        list-style: none;
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        padding: 2px 6px;
+        cursor: pointer;
+        outline: none;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      } /* hide default caret */
+
+      /* custom caret */
+      summary .caret {
+        width: 12px;
+        height: 12px;
+        display: inline-grid;
+        place-items: center;
+        transform-origin: center;
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1;
+        transition: transform 0.12s ease;
+        user-select: none;
+      }
+      details[open] > summary .caret {
+        transform: rotate(90deg);
+        color: var(--muted);
+      }
+
+      /* left vertical guide + indent block */
+      .node {
+        padding-left: 6px;
+        position: relative;
+        margin-left: 8px;
+      }
+      .node::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -1.5em;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--line);
+        z-index: -1;
+      }
+      .node > .kv {
+        padding: 2px 26px;
+      }
+
+      .key {
+        color: var(--key);
+      }
+      .string {
+        color: var(--string);
+      }
+      .number {
+        color: var(--number);
+      }
+      .boolean {
+        color: var(--boolean);
+      }
+      .null {
+        color: var(--null);
+      }
+      .bracket {
+        color: var(--bracket);
+        font-weight: 600;
+      }
+
+      /* small subtle comma/bracket spacing like Firefox */
+      .inline {
+        display: inline;
+      }
+      .sp {
+        margin-right: 6px;
+      }
+
+      /* clickable link style */
+      a.jsonlink {
+        color: var(--link);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      /* nicer spacing for multi-line strings (like the zine list) */
+      .multiline {
+        white-space: pre-wrap;
+        display: block;
+        margin-top: 4px;
+      }
+
+      /* make nested details not draw marker space */
+      details > div {
+        padding-left: 6px;
+      }
+
+      /* hover faint background for focused key lines */
+      .kv:hover {
+        background: rgba(255, 255, 255, 0.01);
+      }
+
+      /* make the caret visually like firefox: small triangle using SVG */
+      .caret svg {
+        display: block;
+      }
+
+      /* small responsiveness */
+      @media (max-width: 600px) {
+        .container {
+          margin: 8px;
+          padding: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {% include "render/tree.html" with node=nodes key_name=None %}
+  </body>
+</html>
