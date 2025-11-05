@@ -7,6 +7,26 @@ art = simple_alphabetical_section(
         "https://publicdomaintreasures.neocities.org/",
         "Collection of public domain art organized into categories with an aesthetic book design."
     ),
+    (
+        "Zacko",
+        "https://zacko.org/",
+        "'A common trope you'll find with all of these are lowbrow subjects rendered as `fine art`' - Zacko"
+    ),
+    (
+        "Punp",
+        "https://punp.neocities.org",
+        "'Throwaway nonsense goo-goo practice art which is actively detracting from my online portfolio and causing me problems' - Punp"
+    ),
+    (
+        "xkcd",
+        "https://xkcd.com/",
+        "The Internet's original \"web comic of romance, sarcasm, math, and language.\" Worth noting: These old web comic sites are very good about linking to other comic strips so you can find dozens more from here."
+    ),
+    (
+        "Walrus Island",
+        "https://walrus-island.neocities.org/",
+        "Vaporwave themed art galleries by Koopa with re-occuring characters "
+    )
 )
 
 esoteric = simple_alphabetical_section(
@@ -15,23 +35,33 @@ esoteric = simple_alphabetical_section(
         "https://lab.hakim.se/checkwave/",
         "Click a checkbox in a grid of checkboxes and see it create waves of checking adjacent boxes."
     ),
+    (
+        "TheSomething",
+        "https://thesomething.uk/",
+        "'weird web experiments with javascript & php'"
+    ),
+    (
+        "PackardBell95",
+        "https://packardbell95.com/",
+        "Surreal audio/visual fortune teller experience with heavy vaporwave influence; new fortune every day."
+    )
 )
 
 emo_music_blogs = simple_alphabetical_section(
     (
         "Open Mind / Saturated Brain",
         "https://openmindsaturatedbrain.blogspot.com/",
-        "Cataloging real emo and hardcore albums since 2013",
+        "Blog cataloging real emo and hardcore albums since 2013",
     ),
     (
         "Sophie's Floorboard",
         "https://sophiesfloorboard.blogspot.com/",
-        "Cataloging real emo and hardcore albums since 2012",
+        "Blog cataloging real emo and hardcore albums since 2012",
     ),
     (
         "What the heck *is* emo, anyway?",
         "https://fourfa.com/",
-        "Not a blog but a primer on the Gen X era of Emo. This site has been around for years and is a window into what emo was like before MySpace.",
+        "Primer on the Gen X era of Emo. This site has been around for years and is a window into what emo was like before MySpace.",
     ),
 )
 
@@ -41,14 +71,29 @@ vaporwave_music_blogs = simple_alphabetical_section(
         "https://utopiadistrict.com",
         "A site that gives me a bit of nostalgia for quarantine-era livestream events. I was paying a lot of attention to the vaporwave scene because of this community at the time.",
     ),
+    (
+        "Nightwave Plaza",
+        "https://plaza.one/",
+        "Online vaporwave and future funk radio station with aesthetic backgrounds and network streams."
+    ),
+    (
+        "Arcology Online",
+        "https://www.arcology.online/",
+        "Articles and interviews in vaporwave space with a very good sized collection of links and resources to external sites."
+    )
 )
 
-pop_music_blogs = simple_alphabetical_section(
+music_blogs = simple_alphabetical_section(
     (
         "America's Decline",
         "https://americasdecline.neocities.org",
         "The vibe is like: You're out shopping in the early 2000s and coming up to the checkout, you pass those stands of magazines with Britney Spears and Katy Perry on the front cover. A variety of stuff but the bulk of content is pop music related.",
     ),
+    (
+        "World Playground Deceit",
+        "https://world-playground-deceit.net/",
+        "Posts about music, film, programming, and other subjects, but the music reviews featuring dark music and extreme metal are my favorite sections."
+    )
 )
 
 forums = simple_alphabetical_section(
@@ -87,6 +132,11 @@ forums = simple_alphabetical_section(
         "https://forum.bladerunners.net/",
         "'For people to chat about tech related things, document their journey in exploring fun stuff etc. Don't take it too seriously' - chxshire22",
     ),
+    (
+        "Niggas in Space",
+        "https://niggasin.space",
+        "Shitposting zone for jaded old timers with a history of either casual racism or substance abuse."
+    )
 )
 
 tools = simple_alphabetical_section(
@@ -97,8 +147,50 @@ tools = simple_alphabetical_section(
     ),
 )
 
+games = simple_alphabetical_section(
+    (
+        "Tardquest",
+        "https://milklounge.wang/tardquest/",
+        "Mildly edgy dungeon crawler with ASCII art, graphical enhancements and a leader board; made with vanilla Javascript"
+    ),
+    (
+        "A Dark Room",
+        "https://adarkroom.doublespeakgames.com/",
+        "An idle-adventure game that starts out simple and surprises you with each new complexity; made with vanilla Javascript"
+    ),
+    (
+        "XP Service Pack 4",
+        "https://xp.goeshard.org",
+        "A nostalgic fake operating system site built with React has a popup closing game. Nice warm up for FPS players maybe."
+    ),
+    (
+        "Final Fantasy VI: Brave New World",
+        "https://bnw.pages.dev",
+        "A romhack of the game that is significantly more difficult than the original. Don't feel guilty at all for using this document to help you beat it. It's intended for you to have it while playing."
+    )
+)
+
+nostalgia = simple_alphabetical_section(
+    (
+        "Dannarchy",
+        "https://dannarchy.com/",
+        "Time capsules of content from Dann's old computers with pop culture blogging reminiscent of X-Entertainment."
+
+    ),
+    (
+        "Vimm's Lair",
+        "https://vimm.net/",
+        "Video game nostalgia site with message boards, emulation, roms, manuals, screen shots, and genuine old web vibes."
+    ),
+    (
+        "Geocities Restorativ Land",
+        "https://geocities.restorativland.org/",
+        "A restored visual gallery of the archived Geocities sites, sorted by neighborhood."
+    )
+)
+
 my_sites = {
-    "description": "He is the maintainer of this page BTW",
+    "description": "I am the maintainer of this page BTW. Some of my sites:",
     "goeshard.org": {
         "blog": make_link(
             "https://goeshard.org",
@@ -113,34 +205,73 @@ my_sites = {
     },
     "ᚾᚩᛒᚩ": make_link(
         "https://nobo.bearblog.dev/",
-        "A personal blog where Nobo posts hot takes and generally tells you how he really feels.",
+        "A personal blog where Nobo posts hot takes and generally tells you how he really feels",
     ),
+    "¥†mñÐ": make_link(
+        "https://goeshard.neocities.org/", 
+        "You're The Man Now Dawg-inspired shitposts that I dump on neocities"
+    )
 }
 
-friend_sites = simple_alphabetical_section(
-    (
-
-        "chxshire22",
-        "https://chxshire22.com/",
-        "Fellow tinkerer, nerd, hackery enthusiast and cyberpunk enjoyer"
-    )
-)
-
-music_blogs = {
+music = {
+    "General": music_blogs,
     "Emo": emo_music_blogs,
     "Vaporwave": vaporwave_music_blogs,
-    "Pop": pop_music_blogs,
 }
+
+comedy = simple_alphabetical_section(
+    (
+        "Krazy Keith's 'ATE MY BALLS' Links Page",
+        "https://web.archive.org/web/20060209101843/https://members.tripod.com/~krazy_keith/Ballz.html",
+        "ATE MY BALLS was a 1990's Internet meme that spawned from saying, \"Mr. T Ate My Balls.\" Pages were made of other celebrities and entities declaring that they, too, ATE MY BALLS. This site attempted to collect them all, and while the site is still up, most of the ATE MY BALLS pages it links to are down. So I've provided the archive.org link so you can browse them."
+    ),
+    (
+        "DukeNukemIs.Cool",
+        "https://dukenukemis.cool/",
+        "The webmaster's real belief in every conspiracy you've ever heard of is offset by her passion for niche hobbies and genuine talent at comedy. Read her writings and watch her videos, just not in front of other people."
+    ),
+    (
+        "JEFFK's NEW AND EMPROVED HOEMAPEG",
+        "https://www.somethingawful.com/hosted/jeffk/",
+        "Parody website immitating preteen gamer kids of the late 90s who were convinced they were the most 31337 of H4X0RS."
+    ),
+    (
+        "Tails Gets Trolled",
+        "https://tailsgetstrolled.org/",
+        "Absurd and edgy comic featuring Sonic the Hedgehog and autism"
+    ),
+)
+
+writing = simple_alphabetical_section(
+    (
+        "RisingThumb.xyz",
+        "https://risingthumb.xyz",
+        "Feels like exploring scattered text files on someone's computer. A large amount of content on subjects ranging from technology to philosophy.",
+    ),
+    (
+        "chxshire22",
+        "https://chxshire22.com/",
+        "Fellow tinkerer, nerd, hackery enthusiast and cyberpunk enjoyer. The writing is informal but personally revealing. Nice design too."
+    )
+)
 
 data = {
     "success": True,
     "status": 200,
     "Art": art,
-    "Blogs": {"Music": music_blogs},
+    "Music": music,
+    "Writing": writing,
     "Forums": forums,
+    "Games": games,
+    "Comedy": comedy,
     "Tools": tools,
+    "Nostalgia": nostalgia,
     "Esoteric": esoteric,
     "Mine": my_sites,
-    "Friends": friend_sites,
-    "none": None,
+    "copyright": None,
+    "FYI": [
+        "This is just the first version of this site and I'll be adding to it a lot. So please give me your feedback, suggest links to me, and return to see more links.",
+        "Sometimes a link doesn't fit neatly into its given category because it's a variety site. In such cases I just pick a spot that feels right in the moment.",
+        
+    ]
 }

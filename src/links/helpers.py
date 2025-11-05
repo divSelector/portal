@@ -12,7 +12,9 @@ def simple_alphabetical_section(*entries):
     )
     Sorted alphabetically by name.
     """
-    return dict(sorted(
+    section = dict(sorted(
         ((name, make_link(link, desc)) for name, link, desc in entries),
         key=lambda x: x[0].lower()
     ))
+    # section["count"] = len(entries)
+    return section

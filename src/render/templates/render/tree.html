@@ -39,7 +39,8 @@
   {% endif %}
 
   {% for v in node %}
-    {% include "render/tree.html" with node=v key_name=forloop.counter0 %}
+    {% comment %} {% include "render/tree.html" with node=v key_name=forloop.counter0 %} {% endcomment %}
+    {% include "render/tree.html" with node=v key_name=forloop.counter0|stringformat:"s" %}
   {% endfor %}
 
   {% if key_name %}
