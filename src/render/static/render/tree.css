@@ -179,14 +179,9 @@ details > div {
     padding-left: 6px;
 }
 
-.kv:hover {
+details:not([open]):hover {
     background: rgba(255, 255, 255, 0.01);
 }
-
-main > *:not(.kv):hover {
-    background: rgba(255, 255, 255, 0.01);
-}
-
 
 .caret svg {
     display: block;

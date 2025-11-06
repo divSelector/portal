@@ -252,7 +252,26 @@ writing = simple_alphabetical_section(
         "chxshire22",
         "https://chxshire22.com/",
         "Fellow tinkerer, nerd, hackery enthusiast and cyberpunk enjoyer. The writing is informal but personally revealing. Nice design too."
+    ),
+    (
+        "The Webyard of Vitnira | Digital Nemeton",
+        "https://vitnira.github.io/digital-nemeton/",
+        "Recommended for those interested in Pre-Christian Europe, which is of course a favorite subject of mine."
     )
+)
+
+link_directories = simple_alphabetical_section(
+    (
+        "Open Directory Project (ODP)",
+        "https://web.archive.org/web/20250924190251/http://odp.org/",
+        "Based on DMOZ (directory mozilla) RDF, which was owned by AOL, it was maintained by volunteer editors for decades, and this site is an archive of that directory created when AOL closed the project. The links here will be very old."
+    ),
+    (
+        "Peelopaalu",
+        "https://peelopaalu.neocities.org/",
+        "Unsorted collection. There are sites here from the 90's and sites that were made last week. Maintained from 2019-2024."
+    ),
+    description="There is some temptation to build on top of other link directory sites, but as I want the portal to go hard in its own way, I will simply direct you to these other sites."
 )
 
 data = {
@@ -267,11 +286,13 @@ data = {
     "Tools": tools,
     "Nostalgia": nostalgia,
     "Esoteric": esoteric,
+    "Links": link_directories,
     "Mine": my_sites,
     "copyright": None,
     "FYI": [
         "This is just the first version of this site and I'll be adding to it a lot. So please give me your feedback, suggest links to me, and return to see more links.",
         "Sometimes a link doesn't fit neatly into its given category because it's a variety site. In such cases I just pick a spot that feels right in the moment.",
+        "If a website is only available via http, I will link to an archive.org backup of the site."
         
     ]
 }
