@@ -251,7 +251,7 @@ writing_fiction = simple_alphabetical_section(
     (
         "STEKI Project",
         "https://projectsteki.neocities.org/",
-        "Attractive, art-based design with interesting \"Layer\" navigation. The primary content is Immaterial Contest, an Unreal Tournament 99 inspired fiction with 19 chapters as of this entry."
+        "Attractive art-based design with interesting \"Layer\" navigation. The primary content is Immaterial Contest, an Unreal Tournament 99 inspired fiction with 19 chapters as of this entry."
     )
 )
 
