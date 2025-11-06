@@ -2,7 +2,7 @@
 {% if node|items %}
   {# dict-like node #}
   {% if key_name %}
-  <details>
+  <details class="{% if node|is_last_folder %}last-folder{% endif %}">
     <summary>
       <span class="caret">
         <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
 {% elif node|is_list %}
   {# list-like node #}
   {% if key_name %}
-  <details>
+  <details class="{% if node|is_last_folder %}last-folder{% endif %}">
     <summary>
       <span class="caret">
         <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,6 @@
   {% endif %}
 
   {% for v in node %}
-    {% comment %} {% include "render/tree.html" with node=v key_name=forloop.counter0 %} {% endcomment %}
     {% include "render/tree.html" with node=v key_name=forloop.counter0|stringformat:"s" %}
   {% endfor %}
 
@@ -59,14 +58,14 @@
       <span class="string">
         <a class="jsonlink" href="{{ node }}" target="_blank">{{ node }}</a>
       </span>
-  {% elif node|is_bool %}
-    <span class="boolean">{{ node|yesno:"true,false" }}</span>
-  {% elif node|is_number %}
-    <span class="number">{{ node }}</span>
-  {% elif node|is_none %}
-    <span class="null">null</span>
-  {% else %}
-    <span class="string">{{ node }}</span>
-  {% endif %}
+    {% elif node|is_bool %}
+      <span class="boolean">{{ node|yesno:"true,false" }}</span>
+    {% elif node|is_number %}
+      <span class="number">{{ node }}</span>
+    {% elif node|is_none %}
+      <span class="null">null</span>
+    {% else %}
+      <span class="string">{{ node }}</span>
+    {% endif %}
   </div>
 {% endif %}

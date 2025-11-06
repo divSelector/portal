@@ -83,7 +83,7 @@ vaporwave_music_blogs = simple_alphabetical_section(
     )
 )
 
-music_blogs = simple_alphabetical_section(
+music = simple_alphabetical_section(
     (
         "America's Decline",
         "https://americasdecline.neocities.org",
@@ -93,7 +93,11 @@ music_blogs = simple_alphabetical_section(
         "World Playground Deceit",
         "https://world-playground-deceit.net/",
         "Posts about music, film, programming, and other subjects, but the music reviews featuring dark music and extreme metal are my favorite sections."
-    )
+    ),
+    include={
+        "Emo": emo_music_blogs,
+        "Vaporwave": vaporwave_music_blogs
+    }
 )
 
 forums = simple_alphabetical_section(
@@ -145,6 +149,11 @@ tools = simple_alphabetical_section(
         "https://colorkit.co/color/8133b2/",
         "Good for building color palettes. Enter a color, pivot to darker, brighter, more saturated, or complementary colors.",
     ),
+    (
+        "88x31 Button Generator by datakra.sh",
+        "https://88x31.datakra.sh/",
+        "Not a terrible place to start if you want one of those snazzy oldweb style link buttons but don't have any art skills."
+    )
 )
 
 games = simple_alphabetical_section(
@@ -213,11 +222,7 @@ my_sites = {
     )
 }
 
-music = {
-    "General": music_blogs,
-    "Emo": emo_music_blogs,
-    "Vaporwave": vaporwave_music_blogs,
-}
+
 
 comedy = simple_alphabetical_section(
     (
@@ -242,7 +247,15 @@ comedy = simple_alphabetical_section(
     ),
 )
 
-writing = simple_alphabetical_section(
+writing_fiction = simple_alphabetical_section(
+    (
+        "STEKI Project",
+        "https://projectsteki.neocities.org/",
+        "Attractive, art-based design with interesting \"Layer\" navigation. The primary content is Immaterial Contest, an Unreal Tournament 99 inspired fiction with 19 chapters as of this entry."
+    )
+)
+
+writing_blogs = simple_alphabetical_section(
     (
         "RisingThumb.xyz",
         "https://risingthumb.xyz",
@@ -257,8 +270,13 @@ writing = simple_alphabetical_section(
         "The Webyard of Vitnira | Digital Nemeton",
         "https://vitnira.github.io/digital-nemeton/",
         "Recommended for those interested in Pre-Christian Europe, which is of course a favorite subject of mine."
-    )
+    ),
 )
+
+writing = {
+    "Blogs": writing_blogs,
+    "Fiction": writing_fiction
+}
 
 link_directories = simple_alphabetical_section(
     (

@@ -3,6 +3,7 @@
     --panel: #15191b;
     --muted: #6b7177;
     --key: #9cdcfe;
+    --key-last-folder-was-opened: hsl(from var(--key) h s calc(l + 10%));
     --string: #ce9178;
     --number: #b5cea8;
     --boolean: #4ec9b0;
@@ -34,7 +35,6 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
 }
 
-/* top toolbar like Firefox viewer */
 .toolbar {
     display: flex;
     gap: 8px;
@@ -85,8 +85,6 @@ summary {
 summary::-webkit-details-marker {
     display: none;
 }
-
-/* hide default caret */
 
 /* custom caret */
 summary .caret {
@@ -186,6 +184,25 @@ details:not([open]):hover {
 .caret svg {
     display: block;
 }
+
+
+/* the color specificity is madness but seems to work */
+details.last-folder > summary > span.key {
+    filter: hue-rotate(40deg);
+}
+
+details.last-folder[open] > summary > span.key {
+    filter: hue-rotate(-40deg);
+}
+
+details.was-opened > summary > span.key {
+    color: var(--key-last-folder-was-opened);
+}
+
+details.was-opened.last-folder[open] > summary > span.key {
+    color: color-mix(in srgb, var(--key) 90%, black);
+}
+
 
 @media (max-width: 600px) {
     .container {

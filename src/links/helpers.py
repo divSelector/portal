@@ -3,7 +3,7 @@ def make_link(url, description, **extra):
     return {"link": url, "description": description, **extra}
 
 
-def simple_alphabetical_section(*entries, description=None):
+def simple_alphabetical_section(*entries, description=None, include=None):
     """
     Build a dict from tuples or lists like:
         simple_alphabetical_section(
@@ -11,12 +11,21 @@ def simple_alphabetical_section(*entries, description=None):
             ...
         )
     Sorted alphabetically by name.
-    Optionally include a 'description' key at the top.
+    Optionally include:
+      - 'description': text placed at the top
+      - 'include': dict of nested sections (added at the top, alphabetized)
     """
-    section = dict(sorted(
+    section_entries = dict(sorted(
         ((name, make_link(link, desc)) for name, link, desc in entries),
         key=lambda x: x[0].lower()
     ))
+
+    nested_sections = dict(sorted(include.items(), key=lambda x: x[0].lower())) if include else {}
+
+    section = {}
     if description:
-        section = {"description": description, **section}
+        section["description"] = description
+    section.update(nested_sections)
+    section.update(section_entries)
+
     return section

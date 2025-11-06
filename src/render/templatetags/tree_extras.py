@@ -26,3 +26,13 @@ def is_number(obj):
 def is_none(obj):
     """True if value is None."""
     return obj is None
+
+@register.filter
+def is_last_folder(node):
+    if not isinstance(node, dict):
+        return False
+    # True if all children are primitives
+    return all(
+        not isinstance(v, (dict, list))
+        for v in node.values()
+    )
