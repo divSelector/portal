@@ -1,7 +1,7 @@
-from .helpers import simple_alphabetical_section, make_link
+from .helpers import alphabetical_section, make_link
 
 
-art = simple_alphabetical_section(
+art = alphabetical_section(
     (
         "Public Domain Treasures",
         "https://publicdomaintreasures.neocities.org/",
@@ -29,7 +29,7 @@ art = simple_alphabetical_section(
     )
 )
 
-esoteric = simple_alphabetical_section(
+esoteric = alphabetical_section(
     (
         "Checkwave",
         "https://lab.hakim.se/checkwave/",
@@ -47,7 +47,7 @@ esoteric = simple_alphabetical_section(
     )
 )
 
-emo_music_blogs = simple_alphabetical_section(
+emo_music_blogs = alphabetical_section(
     (
         "Open Mind / Saturated Brain",
         "https://openmindsaturatedbrain.blogspot.com/",
@@ -65,7 +65,7 @@ emo_music_blogs = simple_alphabetical_section(
     ),
 )
 
-vaporwave_music_blogs = simple_alphabetical_section(
+vaporwave_music_blogs = alphabetical_section(
     (
         "Utopia District",
         "https://utopiadistrict.com",
@@ -83,7 +83,7 @@ vaporwave_music_blogs = simple_alphabetical_section(
     )
 )
 
-music = simple_alphabetical_section(
+music = alphabetical_section(
     (
         "America's Decline",
         "https://americasdecline.neocities.org",
@@ -94,13 +94,18 @@ music = simple_alphabetical_section(
         "https://world-playground-deceit.net/",
         "Posts about music, film, programming, and other subjects, but the music reviews featuring dark music and extreme metal are my favorite sections."
     ),
+    (
+        "OverClocked Remix",
+        "https://ocremix.org/",
+        "Before Spotify, Bandcamp, YouTube, Soulseek, Limewire, or Napster, there was this weird site of people remixing video game music. At the time VGM wasn't respected as real music, so hearing people render it as classical or dance music, it was extremely novel and moreover one of the earliest places I know of that you could download free music."
+    ),
     include={
         "Emo": emo_music_blogs,
         "Vaporwave": vaporwave_music_blogs
     }
 )
 
-forums = simple_alphabetical_section(
+forums = alphabetical_section(
     (
         "Something Awful",
         "https://forums.somethingawful.com",
@@ -143,7 +148,7 @@ forums = simple_alphabetical_section(
     )
 )
 
-tools = simple_alphabetical_section(
+tools = alphabetical_section(
     (
         "ColorKit",
         "https://colorkit.co/color/8133b2/",
@@ -156,7 +161,7 @@ tools = simple_alphabetical_section(
     )
 )
 
-games = simple_alphabetical_section(
+games = alphabetical_section(
     (
         "Tardquest",
         "https://milklounge.wang/tardquest/",
@@ -179,7 +184,7 @@ games = simple_alphabetical_section(
     )
 )
 
-nostalgia = simple_alphabetical_section(
+nostalgia = alphabetical_section(
     (
         "Dannarchy",
         "https://dannarchy.com/",
@@ -224,7 +229,7 @@ my_sites = {
 
 
 
-comedy = simple_alphabetical_section(
+comedy = alphabetical_section(
     (
         "Krazy Keith's 'ATE MY BALLS' Links Page",
         "https://web.archive.org/web/20060209101843/https://members.tripod.com/~krazy_keith/Ballz.html",
@@ -247,7 +252,7 @@ comedy = simple_alphabetical_section(
     ),
 )
 
-writing_fiction = simple_alphabetical_section(
+writing_fiction = alphabetical_section(
     (
         "STEKI Project",
         "https://projectsteki.neocities.org/",
@@ -255,7 +260,7 @@ writing_fiction = simple_alphabetical_section(
     )
 )
 
-writing_blogs = simple_alphabetical_section(
+writing_blogs = alphabetical_section(
     (
         "RisingThumb.xyz",
         "https://risingthumb.xyz",
@@ -278,7 +283,7 @@ writing = {
     "Fiction": writing_fiction
 }
 
-link_directories = simple_alphabetical_section(
+link_directories = alphabetical_section(
     (
         "Open Directory Project (ODP)",
         "https://web.archive.org/web/20250924190251/http://odp.org/",
@@ -308,7 +313,7 @@ data = {
     "Mine": my_sites,
     "copyright": None,
     "FYI": [
-        "This is just the first version of this site and I'll be adding to it a lot. So please give me your feedback, suggest links to me, and return to see more links.",
+        "This is just the early version of this site and I'll be adding to it a lot. So please give me your feedback, suggest links to me, and return to see more links.",
         "Sometimes a link doesn't fit neatly into its given category because it's a variety site. In such cases I just pick a spot that feels right in the moment.",
         "If a website is only available via http, I will link to an archive.org backup of the site."
         

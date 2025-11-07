@@ -3,7 +3,7 @@ def make_link(url, description, **extra):
     return {"link": url, "description": description, **extra}
 
 
-def simple_alphabetical_section(*entries, description=None, include=None):
+def alphabetical_section(*entries, description=None, include=None):
     """
     Build a dict from tuples or lists like:
         simple_alphabetical_section(
