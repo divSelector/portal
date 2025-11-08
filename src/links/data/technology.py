@@ -59,5 +59,14 @@ technology = alphabetical_section(
         "https://dontasktoask.com",
         "\"Any Java experts around who are willing to commit into looking into my problem?\""
     ),
+    (
+        "Software That Sucks Less",
+        "https://suckless.org",
+        "If you don't specifically use any software they maintain, their philsophy is still interesting and their people section leads to a variety of hacker personal pages.",
+        {
+            "philosophy": "https://suckless.org/philosophy/",
+            "people": "https://suckless.org/people/"
+        }
+    ),
     include={"Gamedev": gamedev}
 )
