@@ -32,7 +32,7 @@ writing_blogs = alphabetical_section(
     (
         "Mainpaint",
         "https://manpaint.neocities.org",
-        "Thought on video games, technology, archival, and various topics."
+        "Thoughts on video games, technology, archival, and various topics."
     ),
     (
         "Luke Smith's Webpage",
