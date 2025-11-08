@@ -16,7 +16,7 @@ Very stripped down Django project folder. You can see that the [settings.py](src
 
 This is [where the tree is generated from templates](src/render/templates/render) and the [simple static frontend](src/render/static/render) resides.
 
-There are some templatetags that are used in [tree_extras.py](src/render/templatetags/tree_extras.py)
+There are some templatetags that are used in [tree_extras.py](src/render/templatetags/tree_extras.py), which are functions that can be called from inside templating language.
 
 ## `links` folder
 
