@@ -17,6 +17,11 @@ link_directories = alphabetical_section(
         "https://fmhy.net",
         "Starting as a primer and harm reduction guide on piracy, it's now an exhaustive wiki of free resources and Internet services."
     ),
+    (
+        "Gamedev Gaiden",
+        "https://gamedevgaiden.neocities.org/",
+        "Gamedev Link Directory"
+    ),
     description="There is some temptation to build on top of other link directory sites, but as I want the portal to go hard in its own way, I will simply direct you to these other sites."
 )
 

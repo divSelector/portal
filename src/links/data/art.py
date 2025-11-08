@@ -25,5 +25,10 @@ art = alphabetical_section(
         "Walrus Island",
         "https://walrus-island.neocities.org/",
         "Vaporwave themed art galleries by Koopa with re-occuring characters "
+    ),
+    (
+        "Daily Danger Doodles",
+        "https://dgr2goalone.neocities.org/",
+        "\"cruddy stick doodles about real life events\""
     )
 )

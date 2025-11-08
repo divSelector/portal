@@ -20,5 +20,16 @@ games = alphabetical_section(
         "Final Fantasy VI: Brave New World",
         "https://bnw.pages.dev",
         "A romhack of the game that is significantly more difficult than the original. Don't feel guilty at all for using this document to help you beat it. It's intended for you to have it while playing."
+    ),
+    (
+        "NEAL.FUN",
+        "https://neal.fun",
+        "Clever Javascript games and experiences that often seem to be making meta commentary. Maybe I'm imagining it."
+    ),
+    (
+        "Nicky Case",
+        "https://ncase.me",
+        "Gamedev and frontend developer with design and art skills makes stuff.",
+        {"real": "https://ncase.itch.io/wbwwb"}
     )
 )

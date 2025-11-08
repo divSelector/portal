@@ -40,5 +40,10 @@ forums = alphabetical_section(
         "Niggas in Space",
         "https://niggasin.space",
         "Shitposting zone for jaded old timers with a history of either casual racism or substance abuse."
-    )
+    ),
+    (
+        "Retro Game Talk",
+        "https://retrogametalk.com",
+        "Pretty active forum where you can freely discuss retro games, emulation, romhacking, and other taboo gaming subjects."
+    ),
 )

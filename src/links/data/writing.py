@@ -24,6 +24,26 @@ writing_blogs = alphabetical_section(
         "https://vitnira.github.io/digital-nemeton/",
         "Recommended for those interested in Pre-Christian Europe, which is of course a favorite subject of mine."
     ),
+    (
+        "LostintheCycle",
+        "http://lostinthecycle.xyz/",
+        "Book reviews with an interesting rating system + blog posts and original poetry."
+    ),
+    (
+        "Mainpaint",
+        "https://manpaint.neocities.org",
+        "Thought on video games, technology, archival, and various topics."
+    ),
+    (
+        "Luke Smith's Webpage",
+        "https://lukesmith.xyz",
+        "He writes coherrently about subjects that interest me with sometimes opposite perspectives from mine. His site is a portal to many things not limited to pseudoscience and religious agenda."
+    ),
+    (
+        "Xah Lee Blog",
+        "http://xahlee.org/",
+        "Excursion in math, programing, visual arts, humanities since 1995."
+    )
 )
 
 writing = {
