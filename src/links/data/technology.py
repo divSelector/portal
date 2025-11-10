@@ -68,5 +68,18 @@ technology = alphabetical_section(
             "people": "https://suckless.org/people/"
         }
     ),
+    (
+        "/g/ \"InstallGentoo\" Wiki",
+        "https://igwiki.lyci.de",
+        "I never spent much time on /g/ but they made a decent wiki. Most of the activity was closer to 2014.",
+        {
+            "cyberpunkMovies": "https://igwiki.lyci.de/wiki/Movies"
+        }
+    ),
+    (
+        "MDN Web Documentaion",
+        "https://developer.mozilla.org/",
+        "The best documentation for HTML, CS, JS, and other webdev technologies on the Internet probably."
+    ),
     include={"Gamedev": gamedev}
 )

@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="{% static 'render/tree.css' %}">
   </head>
   <body>
-  <section class="container">
-    <header class="toolbar">
+      <header class="toolbar">
       <button id="btnExpand">Expand All by One</button>
       <button id="btnCollapse">Collpase All by One</button>
       <button id="btnMarkUnseen">Mark All Unseen</button>
     </header>
+  <section class="container">
     <main class="json-root">
       {% include "render/tree.html" with node=nodes key_name=None %}
     </main>

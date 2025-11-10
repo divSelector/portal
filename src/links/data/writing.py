@@ -43,7 +43,12 @@ writing_blogs = alphabetical_section(
         "Xah Lee Blog",
         "http://xahlee.org/",
         "Excursion in math, programing, visual arts, humanities since 1995."
-    )
+    ),
+    (
+        "Andrei",
+        "https://andrei.xyz/",
+        "Romanian webmaster who frequently updates modern website with E/N content going back to 2002."
+    ),
 )
 
 writing = {
