@@ -51,13 +51,6 @@ music = alphabetical_section(
         "OverClocked Remix",
         "https://ocremix.org/",
         "Before Spotify, Bandcamp, YouTube, Soulseek, Limewire, or Napster, there was this weird site of people remixing video game music. At the time VGM wasn't respected as real music, so hearing people render it as classical or dance music, it was extremely novel and moreover one of the earliest places I know of that you could download free music.",
-        {
-            "string": "Hello World",
-            "number": 123,
-            "float": 123.45,
-            "null": None,
-            "bool": False
-        }
     ),
     include={
         "Emo": emo_music_blogs,

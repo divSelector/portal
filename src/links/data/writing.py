@@ -5,6 +5,11 @@ writing_fiction = alphabetical_section(
         "STEKI Project",
         "https://projectsteki.neocities.org/",
         "Attractive art-based design with interesting \"Layer\" navigation. The primary content is Immaterial Contest, an Unreal Tournament 99 inspired fiction with 19 chapters as of this entry."
+    ),
+    (
+        "DreamReach",
+        "https://dreamreach.net",
+        "Interesting site with a webnovel called Fantasy Quest. The blog posts are sequentially rendered into the page after clicking a \"download\" button, strongly encouraging you to start at the beginning rather than jump ahead. Not sure I love that but worth a look."
     )
 )
 

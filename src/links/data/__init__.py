@@ -12,6 +12,7 @@ from .mine import my_sites
 from .news import news
 from .technology import technology
 from .archives import archives
+from .chat import chat
 
 data = {
     "success": True,
@@ -27,6 +28,7 @@ data = {
     "Tools": tools,
     "Nostalgia": nostalgia,
     "Esoteric": esoteric,
+    "Chat": chat,
     "Archives": archives,
     "Links": link_directories,
     "Mine": my_sites,

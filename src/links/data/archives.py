@@ -17,5 +17,11 @@ archives = alphabetical_section(
         "Internet Archive",
         "https://archive.org/",
         "Nonprofit digital library that preserves and provides free access to websites, books, media, and other cultural artifacts from across the internet."
-    )
+    ),
+    (
+        "Gifcities",
+        "https://gifcities.org/",
+        "The GeoCities animated gif search engine by Internet Archive",
+        {"announcementPost": "https://blog.archive.org/2016/11/01/gifcities-the-geocities-animated-gif-search-engine/"}
+    ),
 )
