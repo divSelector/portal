@@ -36,7 +36,12 @@ gamedev = alphabetical_section(
         "Shadertoy",
         "https://www.shadertoy.com/",
         "Platform for building and sharing shaders."
-    )
+    ),
+    (
+        "Gamedev Gaiden",
+        "https://gamedevgaiden.neocities.org/",
+        "Gamedev Link Directory"
+    ),
 )
 
 web_design = alphabetical_section(

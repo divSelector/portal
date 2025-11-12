@@ -1,5 +1,19 @@
 from links.helpers import alphabetical_section
 
+search_engines = alphabetical_section(
+    (
+        "Wiby",
+        "https://wiby.me/",
+        "Emphasis on collecting websites with simple HTML without a lot of bloated scripts."
+    ),
+    (
+        "Marginalia",
+        "https://marginalia-search.com/",
+        "\"Nothing you do to try to make the web a better place matters if nobody can find what you did. There are a lot of precious websites out there that deserve an audience, but instead are languishing in obscurity.\""
+
+    ),
+    description="Search engines are essentially link directories built by web crawlers that can be queried. Here are some small ones."
+)
 
 link_directories = alphabetical_section(
     (
@@ -17,16 +31,7 @@ link_directories = alphabetical_section(
         "https://fmhy.net",
         "Starting as a primer and harm reduction guide on piracy, it's now an exhaustive wiki of free resources and Internet services."
     ),
-    (
-        "Gamedev Gaiden",
-        "https://gamedevgaiden.neocities.org/",
-        "Gamedev Link Directory"
-    ),
-    (
-        "Wiby",
-        "https://wiby.me/",
-        "It's a search engine but essentially a link directory that can be queried. People have found my sites via this so it might serve you as well."
-    ),
-    description="There is some temptation to build on top of other link directory sites, but as I want the portal to go hard in its own way, I will simply direct you to these other sites."
+    description="There is some temptation to build on top of other link directory sites, but as I want the portal to go hard in its own way, I will simply direct you to these other sites.",
+    include={"Search Engines": search_engines}
 )
 
