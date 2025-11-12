@@ -10,7 +10,7 @@ my_sites_goeshard_org = alphabetical_section(
     (
         "imageboard",
         "https://board.goeshard.org",
-        "A static archive of Nobo's imageboard. You can't post on it anymore but you can browse the threads. It was taken offline for reasons you could discover by lurking.",
+        "A static archive of the goeshard imageboard. You can't post on it anymore but you can browse the threads. It was taken offline for reasons you could discover by lurking.",
         {
             "postingEnabled": False,
             "bonus": "https://tylenol.goeshard.org"
@@ -22,7 +22,7 @@ my_sites = alphabetical_section(
     (
         "ᚾᚩᛒᚩ",
         "https://nobo.bearblog.dev/",
-        "A personal blog where Nobo posts hot takes and generally tells you how he really feels"
+        "A personal blog where I post hot takes and generally tells you how Ie really feel."
     ),
     (
         "¥†mñÐ",
