@@ -37,7 +37,15 @@ gamedev = alphabetical_section(
         "https://www.shadertoy.com/",
         "Platform for building and sharing shaders."
     )
+)
 
+web_design = alphabetical_section(
+    (
+        "CSS Garden",
+        "https://csszengarden.com/",
+        "You can get some pretty cool ideas for web design here.",
+        {"favorite": "https://csszengarden.com/219/"}
+    )
 )
 
 technology = alphabetical_section(
@@ -81,5 +89,8 @@ technology = alphabetical_section(
         "https://developer.mozilla.org/",
         "The best documentation for HTML, CS, JS, and other webdev technologies on the Internet probably."
     ),
-    include={"Gamedev": gamedev}
+    include={
+        "Gamedev": gamedev,
+        "Webdev": web_design
+    }
 )

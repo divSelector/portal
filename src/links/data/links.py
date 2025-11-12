@@ -22,6 +22,11 @@ link_directories = alphabetical_section(
         "https://gamedevgaiden.neocities.org/",
         "Gamedev Link Directory"
     ),
+    (
+        "Wiby",
+        "https://wiby.me/",
+        "It's a search engine but essentially a link directory that can be queried. People have found my sites via this so it might serve you as well."
+    ),
     description="There is some temptation to build on top of other link directory sites, but as I want the portal to go hard in its own way, I will simply direct you to these other sites."
 )
 

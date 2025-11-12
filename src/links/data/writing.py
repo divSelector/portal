@@ -54,6 +54,11 @@ writing_blogs = alphabetical_section(
         "https://andrei.xyz/",
         "Romanian webmaster who frequently updates modern website with E/N content going back to 2002."
     ),
+    (
+        "powRSS",
+        "https://powrss.com/",
+        "Aggregator of blog posts all across the indie web powered by RSS. You can add your blog to it as well."
+    ),
 )
 
 writing = {

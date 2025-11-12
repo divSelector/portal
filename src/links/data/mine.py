@@ -11,7 +11,10 @@ my_sites_goeshard_org = alphabetical_section(
         "imageboard",
         "https://board.goeshard.org",
         "A static archive of Nobo's imageboard. You can't post on it anymore but you can browse the threads. It was taken offline for reasons you could discover by lurking.",
-        {"postingEnabled": False},
+        {
+            "postingEnabled": False,
+            "bonus": "https://tylenol.goeshard.org"
+        },
     ),
 )
 
