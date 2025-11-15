@@ -4,7 +4,10 @@ forums = alphabetical_section(
     (
         "Something Awful",
         "https://forums.somethingawful.com",
-        "Y2K era forum known for its significant influence on Internet culture. Well past its prime; it's a retirement home for people that remember it.",
+        "Y2K era forum known for its significant influence on Internet culture. Well past its prime and a shadow of what it used to be; it's a retirement home for people that remember it and didn't leave due to ridiculously bad administration and ideologically captured users that took over.",
+        {
+            "truth": "https://www.reddit.com/r/stupidpol/comments/ej64zs/lets_talk_about_former_internet_sensation/"
+        }
     ),
     (
         "Agora Road",

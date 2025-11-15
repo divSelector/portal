@@ -50,10 +50,15 @@ web_design = alphabetical_section(
         "https://csszengarden.com/",
         "You can get some pretty cool ideas for web design here.",
         {"favorite": "https://csszengarden.com/219/"}
-    )
+    ),
+    (
+        "MDN Web Documentaion",
+        "https://developer.mozilla.org/",
+        "The best documentation for HTML, CS, JS, and other webdev technologies on the Internet probably."
+    ),
 )
 
-technology = alphabetical_section(
+hackers = alphabetical_section(
     (
         "Eric S. Raymond's Home Page",
         "http://www.catb.org/~esr/",
@@ -62,6 +67,20 @@ technology = alphabetical_section(
             "jargon": "http://www.catb.org/~esr/jargon/"
         }
     ),
+    (
+        "Software That Sucks Less",
+        "https://suckless.org",
+        "If you don't specifically use any software they maintain, their philsophy is still interesting and their people section leads to a variety of hacker personal pages.",
+        {
+            "philosophy": "https://suckless.org/philosophy/",
+            "people": "https://suckless.org/people/"
+        }
+    ),
+    description="Referring to classical hackers not cybersecurity"
+)
+
+technology = alphabetical_section(
+
     (
         "Defensive Computing Checklist",
         "https://defensivecomputingchecklist.com/",
@@ -73,15 +92,6 @@ technology = alphabetical_section(
         "\"Any Java experts around who are willing to commit into looking into my problem?\""
     ),
     (
-        "Software That Sucks Less",
-        "https://suckless.org",
-        "If you don't specifically use any software they maintain, their philsophy is still interesting and their people section leads to a variety of hacker personal pages.",
-        {
-            "philosophy": "https://suckless.org/philosophy/",
-            "people": "https://suckless.org/people/"
-        }
-    ),
-    (
         "/g/ \"InstallGentoo\" Wiki",
         "https://igwiki.lyci.de",
         "I never spent much time on /g/ but they made a decent wiki. Most of the activity was closer to 2014.",
@@ -90,12 +100,13 @@ technology = alphabetical_section(
         }
     ),
     (
-        "MDN Web Documentaion",
-        "https://developer.mozilla.org/",
-        "The best documentation for HTML, CS, JS, and other webdev technologies on the Internet probably."
+        "Command Line Fu",
+        "https://www.commandlinefu.com/",
+        "\"place to record those command-line gems that you return to again and again. That way others can gain from your CLI wisdom and you from theirs too. All commands can be commented on, discussed and voted up or down.\""
     ),
     include={
         "Gamedev": gamedev,
-        "Webdev": web_design
+        "Webdev": web_design,
+        "Hackers": hackers
     }
 )
